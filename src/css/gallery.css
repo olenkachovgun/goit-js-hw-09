@@ -1,0 +1,34 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  margin: 0 auto;
+  width: 1128px;
+}
+.gallery-link {
+  display: block;
+  width: 360px;
+  height: 200px;
+}
+.gallery-image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.gallery:hover {
+  cursor: pointer;
+}
+
+.modal img {
+  width: 1112px;
+  height: 640px;
+}
+.sl-wrapper{
+    background-color: rgba(46, 47, 66, 0.8);
+}
+.sl-wrapper .sl-navigation button.sl-prev, 
+.sl-wrapper .sl-navigation button.sl-next,
+.sl-wrapper .sl-counter, 
+.sl-wrapper .sl-close{
+    color:white !important;
+}
