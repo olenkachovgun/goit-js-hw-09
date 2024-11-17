@@ -69,7 +69,7 @@ const images = [
 ];
 const gallery = document.querySelector('.gallery');
 gallery.insertAdjacentHTML('beforeend', createMarkUp(images));
-gallery.addEventListener('click', handleClick);
+
 
 function createMarkUp(arr) {
   return arr
@@ -88,15 +88,7 @@ function createMarkUp(arr) {
     .join('');
 }
 
-function handleClick(event) {
-  event.preventDefault();
 
-  // if (event.target === event.currentTarget) {
-  //   return;
-  // }
-  const currentItem = event.target.closest('.gallery-image');
-  const imgOrigin = currentItem.dataset.source;
-}
 
 //use SimpleLightbox
 let galleryLightbox = new SimpleLightbox('.gallery a',{
